@@ -1,7 +1,7 @@
 import './App.css';
 
-import Sidebar from "./component/Sidebar";
-function About(){
+import Sidebar from "./Sidebar";
+function Home(){
     return(
       <div>
         
@@ -10,4 +10,4 @@ function About(){
     )
 }
 
-export default About
+export default Home

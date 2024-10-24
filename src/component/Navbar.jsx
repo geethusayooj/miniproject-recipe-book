@@ -1,5 +1,7 @@
 
 import image from './imagelogo/image.png'
+
+
 function Navbar(){
     return (
         <div className='headercontainer'>

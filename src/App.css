@@ -54,20 +54,12 @@
   text-decoration: none;
 }
 
-a:hover, a:active {
-  background-color: red;
-}
-a:link {
-  color: red;
+.recipeList {
+  border: 1px solid black;
+  width:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* visited link */
-a:visited {
-  color:gray;
-}
-a:link, a:visited {
-  color:black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+

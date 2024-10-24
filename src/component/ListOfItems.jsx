@@ -1,20 +1,24 @@
-import React from "react";
 import { useState } from "react";
 import data from "../recipe-dataset.json";
-import List from "./List";
+import ItemCard from "./ItemCard";
 
-function ListOfItems() {
-  const [recipes, setRecipes] = useState(data);
-  const deleteRecipe = (recipeId) => {
-    const newArray = recipes.filter((recipe) => recipe.id !== recipeId);
-
-    setRecipes(newArray);
-  };
+function ListOfItems({ recipes, deleteRecipe }) {
 
   return (
     <div>
       <h1>Recipe List</h1>
-      <List recipes={recipes} deleteRecipe={deleteRecipe} />
+
+      
+      <section className="recipeList">
+      {recipes.map((recipe) => (
+        <ItemCard
+          key={recipe.id}
+          recipe={recipe}
+          name={recipe.name}
+          deleteRecipe={deleteRecipe}
+        />
+      ))}
+    </section>
     </div>
   );
 }

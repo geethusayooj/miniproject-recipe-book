@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom"
 import App from "../App"
-import AboutPage from "../page/AboutPage"
-import HomePage from "../page/HomePage"
+import AboutPage from "./About"
+import Home from "./Home"
 
 function Sidebar(){
     return(
         <div className="sidebarcontainer">
         
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/aboutpage">About</NavLink>
         
         </div>
     )

@@ -11,6 +11,7 @@ import ErrorPage from "./page/ErrorPage";
 import data from './recipe-dataset.json';
 import RecipedetailsPage from "./page/RecipedetailsPage";
 import AddRecipe from "./component/AddRecipe";
+import { v4 as uuidv4 } from 'uuid';
 
 import { Routes, Route, Link, NavLink } from "react-router-dom";
 import { useState } from "react";
@@ -27,13 +28,13 @@ function App() {
 
   
   const createRecipe = (recipeDetails) => {
-  const recipeIds = recipes.map(recipe => recipe.id);
-  const maxId = Math.max(...recipeIds);
-  const nextId = maxId + 1;
+  // const recipeIds = recipes.map(recipe => recipe.id);
+  // const maxId = Math.max(...recipeIds);
+  // const nextId = maxId + 1;
 
   const newRecipe = {
     ...recipeDetails,
-    id: nextId
+    id: uuidv4(),
   }
   console.log(newRecipe.id);
     const newArray = ([newRecipe, ...recipes]);

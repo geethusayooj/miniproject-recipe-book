@@ -14,9 +14,9 @@ function AddRecipe(props){
 
         const RecipedetailsPage = {
             name: name,
-            calories: parseInt(calories, 10),
+            calories: calories,
             image: image,
-            servings: parseInt(servings, 10),
+            servings: servings, 
           }
 
           props.callbackToCreate(RecipedetailsPage);
@@ -46,7 +46,7 @@ return(
                 
                 <label>Calories:
                     <input
-                        type="number"
+                        type="text"
                         name="calories"
                         value={calories}
                         placeholder="Enter Calories detail"
@@ -70,7 +70,7 @@ return(
                 
                 <label>Servings:
                     <input
-                        type="number"
+                        type="text"
                         name="servings"
                         placeholder="Enter serving"
                         value={servings}

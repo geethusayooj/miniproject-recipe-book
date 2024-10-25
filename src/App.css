@@ -61,5 +61,10 @@
   flex-direction: column;
   justify-content: center;
 }
+.createRecipe{
+  outline: 2px solid #070707;
+  margin: 1rem;
+  padding: 1rem;
+}
 
 

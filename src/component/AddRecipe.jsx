@@ -29,8 +29,8 @@ function AddRecipe(props){
 
 return(
 <section className="createRecipe">
-<h2>Create your Recipe</h2>
-<form onSubmit={handleSubmit}>
+<h2 className="titleCreateRecipe">Create your Recipe</h2>
+<form className="formCreateRecipe" onSubmit={handleSubmit}>
 
               
                 <label>Recipe:
@@ -43,6 +43,7 @@ return(
                     />
                 </label>
 
+                <br></br>
                 
                 <label>Calories:
                     <input
@@ -54,7 +55,7 @@ return(
                     />
                 </label>
 
-
+                <br></br>
                
                 <label>Image URL:
                     <input
@@ -66,7 +67,7 @@ return(
                     />
                 </label>
 
-
+                <br></br>
                 
                 <label>Servings:
                     <input
@@ -78,7 +79,9 @@ return(
                     />
                 </label>
 
-                <button>Create</button>
+                <br></br>
+
+                <button className="createBtn" >Create</button>
             </form>
 </section>
   

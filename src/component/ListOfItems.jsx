@@ -3,22 +3,24 @@ import data from "../recipe-dataset.json";
 import ItemCard from "./ItemCard";
 
 function ListOfItems({ recipes, deleteRecipe }) {
-
   return (
-    <div>
-      <h1>Recipe List</h1>
+    <div className="recipeListContainer">
+      <h1 className="recipeListTitle">Recipe List</h1>
 
-      
+      <br></br>
+
       <section className="recipeList">
-      {recipes.map((recipe) => (
-        <ItemCard
-          key={recipe.id}
-          recipe={recipe}
-          name={recipe.name}
-          deleteRecipe={deleteRecipe}
-        />
-      ))}
-    </section>
+        <div className="recipes">
+          {recipes.map((recipe) => (
+            <ItemCard
+              key={recipe.id}
+              recipe={recipe}
+              name={recipe.name}
+              deleteRecipe={deleteRecipe}
+            />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

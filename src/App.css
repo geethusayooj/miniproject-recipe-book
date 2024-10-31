@@ -1,3 +1,10 @@
+:root {
+  background-color: #eceae1;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
 
 .imagelogo {
   border-radius: 50%;
@@ -6,65 +13,207 @@
   pointer-events: none;
   margin: 30px;
   display: inline-block;
-  padding: 20px;
 }
-.heading{
-  font-weight: 200;
-  font-size: 30px;
-  font-family: math;
 
-}
-.headercontainer{
+.headercontainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #8a9ca9;
+  width: 100vw;
+  height: 200px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.footerlink,
+.backLink {
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: black;
+  border-radius: 5%;
+  border: 1px solid black;
+  width: 100px;
+  height: auto;
+  position: relative;
+  margin: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  height: 100vh;
+  width: 100vw;
 }
-.footerlink{
-  font-weight: 100;
-  font-size: 20px;
-  font-family: math;
-  text-align: center;
-  margin-top: auto;
-}
-.maincontainer{
-  display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    height: 100vh;
-    width: 100vw;
-}
-.sidebarcontainer{
-  width: 100px;
-  height: auto;
-  background-color: grey;
-  position: fixed;
-  top: 180px;
+
+.sidebarcontainer {
+  width: 10vw;
+  height: 180px;
+  background-color: #8a9ca9;
+  position: absolute;
+  top: 0px;
   left: 0px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border-radius: 10px;
-  font-family: math;
+  padding: 0 20px 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #1a1414;
   text-align: center;
   text-decoration: none;
 }
 
-.recipeList {
-  border: 1px solid black;
-  width:300px;
+.btnContainer {
   display: flex;
   flex-direction: column;
+  margin-top: auto;
+  position: relative;
+}
+
+.homeBtn,
+.aboutBtn,
+.deleteBtn {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin-top: 10px;
+  border-radius: 5%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.createRecipe {
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+  border-radius: 5%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+  background-color: #b0a492;
+}
+
+.formCreateRecipe {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleCreateRecipe {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.createBtn {
+  justify-content: right;
+  align-items: flex-end;
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+  display: block;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.recipeListContainer {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.recipeList {
+  border: 1px solid #b0a492;
+  width: 70vw;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  flex-direction: row;
+  border-radius: 10px;
+  align-items: center;
+  margin: 20px 20px 50px 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.recipeListTitle {
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 20px;
+}
+
+.recipeContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(176, 164, 146, 0.5);
+  border-radius: 5%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+}
+
+.recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
   justify-content: center;
 }
-.createRecipe{
-  outline: 2px solid #070707;
-  margin: 1rem;
-  padding: 1rem;
+
+.recipeDetails {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+  width: 300px;
 }
 
+.favoriteBtn {
+  cursor: pointer;
+  font-size: 25px;
+  justify-content: center;
+  display: flex;
+}
 
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errorImage {
+ width: 400px;
+ margin: 20px;
+ margin-bottom: 50px;
+}

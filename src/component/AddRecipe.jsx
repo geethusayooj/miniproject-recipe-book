@@ -37,7 +37,7 @@ return(
                     <input
                         type="text"
                         name="name"
-                        placeholder="Enter Recipe name"
+                        placeholder="Enter recipe name"
                         value={name}
                         onChange={(e) => { setName(e.target.value) }}
                     />
@@ -50,7 +50,7 @@ return(
                         type="text"
                         name="calories"
                         value={calories}
-                        placeholder="Enter Calories detail"
+                        placeholder="Enter calories"
                         onChange={(e) => { setCalories(e.target.value) }}
                     />
                 </label>
@@ -73,7 +73,7 @@ return(
                     <input
                         type="text"
                         name="servings"
-                        placeholder="Enter serving"
+                        placeholder="Enter number of servings"
                         value={servings}
                         onChange={(e) => { setServings(e.target.value) }}
                     />

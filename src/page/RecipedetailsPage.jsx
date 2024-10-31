@@ -49,20 +49,20 @@ function RecipedetailsPage({
         <p>Calories: {recipe.calories}</p>
         <p>Servings: {recipe.servings} </p>
        
-        <p>
+        <div className="btnDeleteEditContainer">
           <button
             className="deleteBtn"
             onClick={() => {
               deleteRecipe(recipe.id);
-            }}
-          >
-            Delete this Recipe
+            }}>
+            Delete Recipe
           </button>
-        </p>
+        
 
         <Link to={`/recipe/edit/${recipeId}`}>
-          <button>Edit the Recipe</button>
+          <button className="editBtn" >Edit Recipe</button>
         </Link>
+        </div>
 
         <p>
           <Link

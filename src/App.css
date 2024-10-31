@@ -62,7 +62,6 @@
 .sidebarcontainer {
   width: 10vw;
   height: 180px;
-  background-color: #8a9ca9;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -83,9 +82,20 @@
   position: relative;
 }
 
+.btnDeleteEditContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
 .homeBtn,
 .aboutBtn,
-.deleteBtn {
+.deleteBtn,
+.editBtn,
+.createBtn,
+.updateBtn {
   border: 1px solid black;
   padding: 10px;
   cursor: pointer;
@@ -98,7 +108,8 @@
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.createRecipe {
+.createRecipe, 
+.editRecipe {
   margin: 20px auto;
   padding: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -110,30 +121,22 @@
   border-radius: 5%;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   background-color: #b0a492;
+  align-items: center;
 }
 
-.formCreateRecipe {
+.formCreateRecipe,
+.formEditRecipe {
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
-.titleCreateRecipe {
+.titleCreateRecipe,
+.titleEditRecipe {
   text-align: center;
   margin: 10px;
   margin-bottom: 20px;
-}
-
-.createBtn {
-  justify-content: right;
-  align-items: flex-end;
-  height: 30px;
-  width: 100px;
-  margin: 10px;
-  display: block;
-  border-radius: 5%;
-  cursor: pointer;
 }
 
 .recipeListContainer {
@@ -178,6 +181,7 @@
   background-color: rgba(176, 164, 146, 0.5);
   border-radius: 5%;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+  overflow: hidden;
 }
 
 .recipes {
@@ -197,7 +201,9 @@
   margin: 20px;
   justify-content: center;
   width: 300px;
+  gap: 10px;
 }
+
 
 .favoriteBtn {
   cursor: pointer;
@@ -216,4 +222,29 @@
  width: 400px;
  margin: 20px;
  margin-bottom: 50px;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.teamMemberContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  gap: 10px;
+  border: 1px solid #b0a492;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5%;
+  justify-content: center;
+}
+
+.imageTeamMember {
+  width: 300px;
+  height: auto;
 }

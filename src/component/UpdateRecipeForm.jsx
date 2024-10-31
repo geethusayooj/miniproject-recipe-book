@@ -16,8 +16,8 @@ function UpdateRecipeForm({ recipes, setRecipes }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    
-   setRecipeUpdate(recipes.find(recipe => recipe.id === recipeId)) 
+
+    setRecipeUpdate(recipes.find(recipe => recipe.id === recipeId))
   }, [recipeId]);
 
   const handleFormSubmit = (e) => {
@@ -31,56 +31,65 @@ function UpdateRecipeForm({ recipes, setRecipes }) {
 
     const recipieIndex = recipes.findIndex(recipe => recipe.id === recipeId);
     const updated = recipes;
-    updated[recipieIndex]= { ...updated[recipieIndex], ...updatedRecipe};
+    updated[recipieIndex] = { ...updated[recipieIndex], ...updatedRecipe };
     setRecipes(updated);
     navigate(`/recipe/${recipeId}`);
-   
+
   };
 
   const handleChange = (e) => {
-    setRecipeUpdate(prev => ({...prev, [e.target.name]: e.target.value }))
-   
+    setRecipeUpdate(prev => ({ ...prev, [e.target.name]: e.target.value }))
+
   }
 
   return (
-    <div className="EditRecipePage">
-      <h3>Edit the Recipe</h3>
-      <form onSubmit={handleFormSubmit}>
+    <div className="editRecipe">
+      <h3 className="titleEditRecipe">Edit Recipe</h3>
+      <form className="formEditRecipe" onSubmit={handleFormSubmit} >
+
         <label>
           Name:
           <input
             type="text"
             name="name"
-            placeholder="Enter the recipe name"
+            placeholder="Enter recipe name"
             value={recipeUpdate.name}
             onChange={handleChange}
           />
         </label>
+
+        <br></br>
 
         <label>
           Calories:
           <input
             type="number"
             name="calories"
-            placeholder="Enter the calories"
+            placeholder="Enter calories"
             value={recipeUpdate.calories}
             onChange={handleChange}
           />
         </label>
+
+        <br></br>
 
         <label>
           Servings:
           <input
             type="number"
             name="servings"
-            placeholder="Enter the number of servings"
+            placeholder="Enter number of servings"
             value={recipeUpdate.servings}
             onChange={handleChange}
           />
         </label>
 
-        <button type="submit">Update Recipe</button>
+        <br></br>
+
+        <button className="updateBtn" type="submit">Update</button>
+
       </form>
+
     </div>
   );
 }

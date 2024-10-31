@@ -2,12 +2,12 @@
 import image from './imagelogo/image.png'
 
 
-function Navbar(){
+function Navbar() {
     return (
         <div className='headercontainer'>
-        <img className="imagelogo" src={image} alt="WORLD OF FLAVORS logo" />
-        <h1 className='heading'>WORLD OF FLAVORS</h1>
-        
+            <img className="imagelogo" src={image} alt="WORLD OF FLAVORS logo" />
+            <h1 className='heading'>WORLD OF FLAVORS</h1>
+
         </div>
     )
 }

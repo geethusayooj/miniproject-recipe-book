@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
-import App from "../App";
-import AboutPage from "../page/AboutPage";
+
 
 
 function Sidebar() {

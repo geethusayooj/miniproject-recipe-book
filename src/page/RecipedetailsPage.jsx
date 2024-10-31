@@ -1,9 +1,8 @@
 import React from "react";
-import UpdateRecipeForm from "../component/UpdateRecipeForm";
 import { Link, useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { useEffect ,useState} from "react";
-import axios from "axios";
+
+
 
 
 function RecipedetailsPage({
@@ -13,7 +12,7 @@ function RecipedetailsPage({
   updateRecipe,
 }) {
 
-  const [project, setProject] = useState(null);
+
   const { recipeId } = useParams();
   const recipe = recipes.find((r) => r.id === recipeId);
   const navigate = useNavigate();

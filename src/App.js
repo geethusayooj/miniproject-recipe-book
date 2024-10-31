@@ -3,7 +3,6 @@ import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import Sidebar from "./component/Sidebar";
 import ListOfItems from "./component/ListOfItems";
-import ItemCard from "./component/ItemCard";
 import AboutPage from "./page/AboutPage";
 import { useLocation } from "react-router-dom";
 import ErrorPage from "./page/ErrorPage";
@@ -12,7 +11,7 @@ import RecipedetailsPage from "./page/RecipedetailsPage";
 import UpdateRecipeForm from "./component/UpdateRecipeForm";
 import AddRecipe from "./component/AddRecipe";
 import { v4 as uuidv4 } from "uuid";
-import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 

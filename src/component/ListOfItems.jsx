@@ -1,5 +1,4 @@
-import { useState } from "react";
-import data from "../recipe-dataset.json";
+
 import ItemCard from "./ItemCard";
 
 function ListOfItems({ recipes, deleteRecipe }) {

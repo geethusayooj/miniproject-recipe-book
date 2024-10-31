@@ -1,9 +1,9 @@
-function Footer(){
+function Footer() {
     return (
         <div className="footerlink">
-           <a  href="https://github.com/geethusayooj/miniproject-recipe-book" style={{ textDecoration: "none" , color:"black"}} > git hub repo  </a>
-           
-            
+            <a href="https://github.com/geethusayooj/miniproject-recipe-book" style={{ textDecoration: "none", color: "black" }} > git hub repo  </a>
+
+
         </div>
     )
 }

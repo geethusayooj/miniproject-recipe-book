@@ -38,13 +38,13 @@ function AboutPage() {
           I have a crazy family of 5 and a wild chihuahua.
         </p>
         <div className="links">
-          <a href="https://github.com/claudiapando17" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }}>GitHub</a> 
+          <a href="https://github.com/claudiapando17" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }}>GitHub</a>
           <br></br>
           <a href="https://www.linkedin.com/in/claudiapando/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "black" }}>LinkedIn</a>
 
         </div>
       </div>
-      
+
       <br></br>
 
       <div className="teamMemberContainer">

@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 
-function AddRecipe(props){
-    
+function AddRecipe(props) {
+
     const [name, setName] = useState("");
     const [calories, setCalories] = useState("");
     const [image, setImage] = useState("");
@@ -16,23 +16,23 @@ function AddRecipe(props){
             name: name,
             calories: calories,
             image: image,
-            servings: servings, 
-          }
-
-          props.callbackToCreate(RecipedetailsPage);
-
-          setName("");
-          setCalories("");
-          setImage("");
-          setServings("");
+            servings: servings,
         }
 
-return(
-<section className="createRecipe">
-<h2 className="titleCreateRecipe">Create your Recipe</h2>
-<form className="formCreateRecipe" onSubmit={handleSubmit}>
+        props.callbackToCreate(RecipedetailsPage);
 
-              
+        setName("");
+        setCalories("");
+        setImage("");
+        setServings("");
+    }
+
+    return (
+        <section className="createRecipe">
+            <h2 className="titleCreateRecipe">Create your Recipe</h2>
+            <form className="formCreateRecipe" onSubmit={handleSubmit}>
+
+
                 <label>Recipe:
                     <input
                         type="text"
@@ -44,7 +44,7 @@ return(
                 </label>
 
                 <br></br>
-                
+
                 <label>Calories:
                     <input
                         type="text"
@@ -56,7 +56,7 @@ return(
                 </label>
 
                 <br></br>
-               
+
                 <label>Image URL:
                     <input
                         type="url"
@@ -68,7 +68,7 @@ return(
                 </label>
 
                 <br></br>
-                
+
                 <label>Servings:
                     <input
                         type="text"
@@ -83,9 +83,9 @@ return(
 
                 <button className="createBtn" >Create</button>
             </form>
-</section>
-  
-)
+        </section>
+
+    )
 }
 export default AddRecipe;
 
